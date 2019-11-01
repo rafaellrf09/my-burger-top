@@ -1,6 +1,6 @@
 import React from 'react'
 import Aux from "../../hoc/Aux"
-
+import Toolbar from "../../components/Navigation/Toolbar/Toolbar"
 
 import "./Layout.scss" 
 
@@ -8,7 +8,7 @@ function Layout(props) {
     return (
         <Aux>
             <div>
-                Toobar , SideDrawer, Backdrop
+                <Toolbar/> , SideDrawer, Backdrop
             </div>
             <main className="Content">
                 {props.children}

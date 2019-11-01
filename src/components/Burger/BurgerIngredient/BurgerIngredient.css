@@ -113,11 +113,10 @@
 }
 
 .clara {
-  width: 350px;
+  width: 300px;
   height: 15px;
   border-radius: 10px;
   background-color: #FFF;
-  box-shadow: 0px 0px 15px -3px rgba(0,0,0,0.3);
 }
 .gema {
   background-color: #eba534;

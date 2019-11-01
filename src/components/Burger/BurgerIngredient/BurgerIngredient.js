@@ -37,9 +37,9 @@ const BurgerIngredient = (props) => {
             break 
         case("egg"):
             ingredient = (
-                <div class="ovo">
-                    <div class="gema"></div>
-                    <div class="clara"></div>
+                <div className="ovo">
+                    <div className="gema"></div>
+                    <div className="clara"></div>
                 </div>
             );
             break 
