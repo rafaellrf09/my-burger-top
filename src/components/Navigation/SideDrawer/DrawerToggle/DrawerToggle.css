@@ -8,6 +8,7 @@
     padding: 10px 0;
     box-sizing: border-box;
     cursor: pointer;
+    color: rgba(255, 230, 0, 0.5);
 }
 
 .DrawerToggle div {
