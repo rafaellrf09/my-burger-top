@@ -4,9 +4,9 @@
     position: fixed;
     top: 0;
     left: 0;
-    background: #703b09;
+    background-color: #703B09;
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: center;
     padding: 0 20px;
     box-sizing: border-box;
@@ -15,5 +15,23 @@
 
 .Toolbar nav {
     height: 100%;
-    
+    flex: 1;
+}
+
+.LogoToolbar {
+    height: 80%;
+    flex: 5;
+}
+
+.Menu {
+flex: 1;
+}
+
+@media (max-width: 499px) {
+    .DesktopOnly {
+        display: none;
+    }
+    .LogoToolbar {
+        flex: 0;
+    }
 }
