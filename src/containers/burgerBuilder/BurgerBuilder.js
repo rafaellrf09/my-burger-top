@@ -7,21 +7,21 @@ import Modal from "../../UI/Modal/Modal"
 import OrderSummary from "../../components/Burger/OrderSymmary/OrderSummary"
 
 const INGREDIENT_PRICES = {
-    salad : 1,
-    cheese : 2,
-    meat: 3.5,
+    salada : 1,
+    queijo : 2,
+    carne: 3.5,
     bacon: 2,
-    egg: 1.5
+    ovo: 1.5
 };
 
 class BurgerBuilder extends Component {
     state = {
         ingredients: {
-            salad: 0,
-            egg: 0,
-            cheese: 0,
+            salada: 0,
+            ovo: 0,
+            queijo: 0,
             bacon: 0,
-            meat: 0,
+            carne: 0,
         },
         totalPrice: 10,
         purchasable : false,
