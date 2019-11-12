@@ -12,7 +12,7 @@ class Modal extends Component {
     }
 
     componentDidUpdate(){
-        console.log("cu2")
+        console.log("Modal")
     }
 
     render(){
