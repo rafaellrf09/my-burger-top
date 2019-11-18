@@ -1,7 +1,7 @@
 import axios from "axios"
 
 const server = axios.create({
-    baseURL: process.env.API_URL,
-  });
+  baseURL: "https://burger-top-server.herokuapp.com/api/v1",
+});
 
   export default server;
