@@ -5,6 +5,7 @@ import Burger from "../../components/Burger/Burger"
 import BuildControls from "../../components/Burger/BuildControls/BuildControls"
 import Modal from "../../UI/Modal/Modal"
 import OrderSummary from "../../components/Burger/OrderSymmary/OrderSummary"
+import api from "../../API/axios"
 
 const INGREDIENT_PRICES = {
     salada : 1,
@@ -51,8 +52,25 @@ class BurgerBuilder extends Component {
         })
     }
 
-    purchaseContinueHandler = () => {
-        alert("Continue")
+    purchaseContinueHandler = async () => {
+        let json = {
+            itens: this.state.ingredients,
+            total: this.state.totalPrice
+        }
+        try {
+            let response = await api.post("criar-pedido", json);
+             alert(response.data.resposta)
+             this.setState({ingredients: {
+                salada: 0,
+                ovo: 0,
+                queijo: 0,
+                bacon: 0,
+                carne: 0,
+            },
+            totalPrice: 10})
+        } catch (error) {
+            alert(error)
+        }
     }
 
     addIngredientHandler = (type) => {
